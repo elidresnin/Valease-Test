@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51C1FF0D536B1F030DE0F117 /* Pods_Valease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D65E9615CAC9FD8C04485C /* Pods_Valease.framework */; };
+		D0B9723D2B9B8127004BC83A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0B9723C2B9B8127004BC83A /* GoogleService-Info.plist */; };
 		D0DA04302B9B7B27007151B3 /* ValeaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA042F2B9B7B27007151B3 /* ValeaseApp.swift */; };
 		D0DA04322B9B7B27007151B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA04312B9B7B27007151B3 /* ContentView.swift */; };
 		D0DA04342B9B7B29007151B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DA04332B9B7B29007151B3 /* Assets.xcassets */; };
@@ -14,11 +16,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72D65E9615CAC9FD8C04485C /* Pods_Valease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82FD003627860213F8A3ADF /* Pods-Valease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valease.release.xcconfig"; path = "Target Support Files/Pods-Valease/Pods-Valease.release.xcconfig"; sourceTree = "<group>"; };
+		D0B9723C2B9B8127004BC83A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0DA042C2B9B7B27007151B3 /* Valease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DA042F2B9B7B27007151B3 /* ValeaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValeaseApp.swift; sourceTree = "<group>"; };
 		D0DA04312B9B7B27007151B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0DA04332B9B7B29007151B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0DA04362B9B7B29007151B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E14620676131AC2D41773683 /* Pods-Valease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valease.debug.xcconfig"; path = "Target Support Files/Pods-Valease/Pods-Valease.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C1FF0D536B1F030DE0F117 /* Pods_Valease.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84084C4ED422AF4DDF5A29D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72D65E9615CAC9FD8C04485C /* Pods_Valease.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0DA04232B9B7B27007151B3 = {
 			isa = PBXGroup;
 			children = (
 				D0DA042E2B9B7B27007151B3 /* Valease */,
 				D0DA042D2B9B7B27007151B3 /* Products */,
+				D5373DA1BC6E36790737683F /* Pods */,
+				84084C4ED422AF4DDF5A29D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +68,7 @@
 		D0DA042E2B9B7B27007151B3 /* Valease */ = {
 			isa = PBXGroup;
 			children = (
+				D0B9723C2B9B8127004BC83A /* GoogleService-Info.plist */,
 				D0DA042F2B9B7B27007151B3 /* ValeaseApp.swift */,
 				D0DA04312B9B7B27007151B3 /* ContentView.swift */,
 				D0DA04332B9B7B29007151B3 /* Assets.xcassets */,
@@ -67,6 +85,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D5373DA1BC6E36790737683F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E14620676131AC2D41773683 /* Pods-Valease.debug.xcconfig */,
+				A82FD003627860213F8A3ADF /* Pods-Valease.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0DA043A2B9B7B29007151B3 /* Build configuration list for PBXNativeTarget "Valease" */;
 			buildPhases = (
+				5E51CB3A148592033BCAE343 /* [CP] Check Pods Manifest.lock */,
 				D0DA04282B9B7B27007151B3 /* Sources */,
 				D0DA04292B9B7B27007151B3 /* Frameworks */,
 				D0DA042A2B9B7B27007151B3 /* Resources */,
+				181C0724FBD6FB9B0431BB5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,10 +156,53 @@
 			files = (
 				D0DA04372B9B7B29007151B3 /* Preview Assets.xcassets in Resources */,
 				D0DA04342B9B7B29007151B3 /* Assets.xcassets in Resources */,
+				D0B9723D2B9B8127004BC83A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		181C0724FBD6FB9B0431BB5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Valease/Pods-Valease-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Valease/Pods-Valease-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Valease/Pods-Valease-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E51CB3A148592033BCAE343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Valease-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0DA04282B9B7B27007151B3 /* Sources */ = {
@@ -261,6 +333,7 @@
 		};
 		D0DA043B2B9B7B29007151B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14620676131AC2D41773683 /* Pods-Valease.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +363,7 @@
 		};
 		D0DA043C2B9B7B29007151B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82FD003627860213F8A3ADF /* Pods-Valease.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
