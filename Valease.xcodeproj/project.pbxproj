@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51C1FF0D536B1F030DE0F117 /* Pods_Valease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D65E9615CAC9FD8C04485C /* Pods_Valease.framework */; };
+		A231F4E72B9F7DCD0090D8DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231F4E62B9F7DCD0090D8DB /* Constants.swift */; };
 		D0B9723D2B9B8127004BC83A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0B9723C2B9B8127004BC83A /* GoogleService-Info.plist */; };
 		D0DA04302B9B7B27007151B3 /* ValeaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA042F2B9B7B27007151B3 /* ValeaseApp.swift */; };
 		D0DA04322B9B7B27007151B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA04312B9B7B27007151B3 /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		72D65E9615CAC9FD8C04485C /* Pods_Valease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A231F4E62B9F7DCD0090D8DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A82FD003627860213F8A3ADF /* Pods-Valease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valease.release.xcconfig"; path = "Target Support Files/Pods-Valease/Pods-Valease.release.xcconfig"; sourceTree = "<group>"; };
 		D0B9723C2B9B8127004BC83A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0DA042C2B9B7B27007151B3 /* Valease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valease.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A231F4E42B9F7D900090D8DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0DA04312B9B7B27007151B3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A231F4E52B9F7DA60090D8DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A231F4E62B9F7DCD0090D8DB /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D0DA04232B9B7B27007151B3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +86,10 @@
 		D0DA042E2B9B7B27007151B3 /* Valease */ = {
 			isa = PBXGroup;
 			children = (
+				A231F4E42B9F7D900090D8DB /* Views */,
+				A231F4E52B9F7DA60090D8DB /* Model */,
 				D0B9723C2B9B8127004BC83A /* GoogleService-Info.plist */,
 				D0DA042F2B9B7B27007151B3 /* ValeaseApp.swift */,
-				D0DA04312B9B7B27007151B3 /* ContentView.swift */,
 				D0DA04332B9B7B29007151B3 /* Assets.xcassets */,
 				D0DA04352B9B7B29007151B3 /* Preview Content */,
 			);
@@ -211,6 +230,7 @@
 			files = (
 				D0DA04322B9B7B27007151B3 /* ContentView.swift in Sources */,
 				D0DA04302B9B7B27007151B3 /* ValeaseApp.swift in Sources */,
+				A231F4E72B9F7DCD0090D8DB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
